@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IpMsg.Core\IpMsg.Core.csproj" />
+    <ProjectReference Include="..\IpMsg.Network\IpMsg.Network.csproj" />
+    <ProjectReference Include="..\IpMsg.Protocol\IpMsg.Protocol.csproj" />
+  </ItemGroup>
+</Project>

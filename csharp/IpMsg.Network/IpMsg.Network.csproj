@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IpMsg.Protocol\IpMsg.Protocol.csproj" />
+    <ProjectReference Include="..\IpMsg.Core\IpMsg.Core.csproj" />
+  </ItemGroup>
+</Project>
