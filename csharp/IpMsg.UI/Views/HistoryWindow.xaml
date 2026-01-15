@@ -1,0 +1,12 @@
+<Window x:Class="IpMsg.UI.Views.HistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="履歴"
+        Height="194" Width="532"
+        ResizeMode="CanResizeWithGrip">
+    <Canvas Width="532" Height="194" Background="Transparent">
+        <ListView Width="508" Height="130" Canvas.Left="12" Canvas.Top="12" />
+        <Button Content="開く" Width="90" Height="26" Canvas.Left="340" Canvas.Top="150" />
+        <Button Content="閉じる" Width="90" Height="26" Canvas.Left="440" Canvas.Top="150" IsCancel="True" />
+    </Canvas>
+</Window>

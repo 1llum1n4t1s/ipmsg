@@ -1,0 +1,45 @@
+<Window x:Class="IpMsg.UI.Views.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="設定"
+        Height="528" Width="586"
+        ResizeMode="CanResizeWithGrip">
+    <Canvas Width="586" Height="528" Background="Transparent">
+        <GroupBox Header="ユーザー" Width="560" Height="120" Canvas.Left="12" Canvas.Top="12">
+            <StackPanel Margin="8">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="ユーザー名" Width="120" />
+                    <TextBox Width="380" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="ホスト名" Width="120" />
+                    <TextBox Width="380" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="ネットワーク" Width="560" Height="120" Canvas.Left="12" Canvas.Top="150">
+            <StackPanel Margin="8">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="UDPポート" Width="120" />
+                    <TextBox Width="120" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="TCPポート" Width="120" />
+                    <TextBox Width="120" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="機能" Width="560" Height="140" Canvas.Left="12" Canvas.Top="288">
+            <StackPanel Margin="8">
+                <CheckBox Content="暗号化を有効にする" />
+                <CheckBox Content="IPDictを使用する" />
+                <CheckBox Content="ログを保存する" />
+            </StackPanel>
+        </GroupBox>
+
+        <Button Content="OK" Width="90" Height="30" Canvas.Left="372" Canvas.Top="454" IsDefault="True" />
+        <Button Content="キャンセル" Width="90" Height="30" Canvas.Left="472" Canvas.Top="454" IsCancel="True" />
+    </Canvas>
+</Window>

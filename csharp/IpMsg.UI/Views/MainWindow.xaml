@@ -1,0 +1,38 @@
+<Window x:Class="IpMsg.UI.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IP Messenger" Height="480" Width="720">
+    <Grid Margin="8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Button Content="送信" Width="80" Click="OnOpenSend" />
+            <Button Content="受信" Width="80" Click="OnOpenReceive" />
+            <Button Content="設定" Width="80" Click="OnOpenSettings" />
+            <Button Content="履歴" Width="80" Click="OnOpenHistory" />
+            <Button Content="ログ" Width="80" Click="OnOpenLog" />
+            <Button Content="ログイン" Width="80" Click="OnOpenLogin" />
+            <Button Content="プラグイン" Width="80" Click="OnOpenPlugin" />
+        </StackPanel>
+
+        <GroupBox Header="ホスト一覧" Grid.Row="1" Grid.Column="0" Margin="0,8,8,8">
+            <ListView />
+        </GroupBox>
+
+        <GroupBox Header="ログ" Grid.Row="1" Grid.Column="1" Margin="0,8,0,8">
+            <TextBox AcceptsReturn="True" TextWrapping="Wrap" />
+        </GroupBox>
+
+        <StatusBar Grid.Row="2" Grid.ColumnSpan="2">
+            <StatusBarItem Content="接続待機中" />
+        </StatusBar>
+    </Grid>
+</Window>
