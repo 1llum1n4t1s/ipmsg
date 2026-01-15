@@ -172,6 +172,7 @@ public static class ProtocolConstants
     public const uint VerMacType = 0x00020000;
     public const uint VerIosType = 0x00030000;
     public const uint VerAndroidType = 0x00040000;
+    public static uint VerWinType => Environment.Is64BitProcess ? VerWin64Type : VerWin32Type;
 
     public const string VerKey = "VER";
     public const string PktNoKey = "PKT";
